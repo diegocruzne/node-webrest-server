@@ -8,6 +8,7 @@ const server = http.createServer((req, res) => {
     const htmlFile = fs.readFileSync("./public/index.html", "utf-8");
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(htmlFile);
+    
     return;
   }
 
